@@ -29,3 +29,22 @@ class cricket_player:
     def calculate_age(self):
         current_year = dt.datetime.now().year
         return current_year - self.birth_year
+    
+    # def __str__(self):
+    #     sum_and_average = self.sum_and_avg()
+    #     return f"\nCircket Player Info\nFirst Name = {self.first_name}\nLast Name = {self.last_name}\nGender = {self.gender}\nTeam = {self.team}\nBirth Year = {self.birth_year}\nAge = {self.calculate_age()}\nScores = {self.scores}\nTotal Scores = {sum_and_average[0]}\nAverage Scores = {sum_and_average[1]}"
+
+    def __str__(self):
+        sum_and_average = self.sum_and_avg()
+        return f"""
+        Circket Player Info
+        First Name = {self.first_name}
+        Last Name = {self.last_name}
+        Gender = {self.gender}
+        Team = {self.team}
+        Birth Year = {self.birth_year}
+        Age = {self.calculate_age()}
+        Scores = {self.scores}
+        Total Scores = {sum_and_average[0]}
+        Average Scores = {sum_and_average[1]}
+"""
