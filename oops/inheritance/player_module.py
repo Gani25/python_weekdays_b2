@@ -17,7 +17,7 @@ class player:
         return current_year - self.birth_year
     
     def __str__(self):
-        sum_and_average = self.sum_and_avg()
+        
         return f"""
         Player Info
         First Name = {self.first_name}
@@ -27,3 +27,9 @@ class player:
         Birth Year = {self.birth_year}
         Age = {self.calculate_age()}
 """
+    
+def check_name():
+    print("Name of __name__ -> ",__name__)
+
+if(__name__ == "__main__"):
+    check_name()
